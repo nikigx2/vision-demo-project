@@ -5,8 +5,6 @@
 //  Created by Nick Beresnev on 11/21/21.
 //
 
-import Foundation
-
 final class DIContainer {
     typealias Resolver = () -> Any
 

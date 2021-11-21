@@ -66,3 +66,15 @@ struct EditingView: View {
         }
     }
 }
+
+struct EditingView_Previews: PreviewProvider {
+    static var previews: some View {
+        EditingView(
+            originalImage: UIImage,
+            processedImage: nil,
+            saveHandler: {},
+            chooseImageHandler: {},
+            resetStateHandler: {}
+        )
+    }
+}

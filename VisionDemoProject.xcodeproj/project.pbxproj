@@ -80,6 +80,7 @@
 		542E8A6B274A9EF70054A16F /* VisionDemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				542E8A9A274AA3290054A16F /* Scenes */,
 				542E8A90274AA1E80054A16F /* Views */,
 				542E8A7C274AA02C0054A16F /* Common */,
 				542E8A6C274A9EF70054A16F /* VisionDemoProjectApp.swift */,
@@ -137,7 +138,6 @@
 		542E8A90274AA1E80054A16F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				542E8A9A274AA3290054A16F /* Scenes */,
 				542E8A91274AA1EF0054A16F /* UIViewRepresentable */,
 				542E8A95274AA2620054A16F /* EditingView.swift */,
 				542E8A96274AA2620054A16F /* EmptyImageView.swift */,

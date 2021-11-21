@@ -5,7 +5,6 @@
 //  Created by Nick Beresnev on 11/21/21.
 //
 
-import Foundation
 import SwiftUI
 
 struct EmptyStateView: View {
@@ -22,5 +21,11 @@ struct EmptyStateView: View {
 
             Spacer()
         }
+    }
+}
+
+struct EmptyStateView_Previews: PreviewProvider {
+    static var previews: some View {
+        EmptyStateView(onTapHandler: {})
     }
 }

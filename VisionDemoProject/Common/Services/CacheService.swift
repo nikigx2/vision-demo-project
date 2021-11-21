@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import UIKit
+import class UIKit.UIImage
 
 protocol CacheServicing {
     func getDocumentsDirectory() -> URL
