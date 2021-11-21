@@ -50,7 +50,7 @@ struct EditingView: View {
 
             HStack {
                 Button(action: { saveHandler() }) {
-                    Text("Save state")
+                    Text("save.state")
                 }
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.roundedRectangle)
@@ -58,7 +58,7 @@ struct EditingView: View {
                 Spacer()
 
                 Button(action: { resetStateHandler() }) {
-                    Text("Reset state")
+                    Text("reset.state")
                 }
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.roundedRectangle)
@@ -70,7 +70,7 @@ struct EditingView: View {
 struct EditingView_Previews: PreviewProvider {
     static var previews: some View {
         EditingView(
-            originalImage: UIImage,
+            originalImage: UIImage(),
             processedImage: nil,
             saveHandler: {},
             chooseImageHandler: {},

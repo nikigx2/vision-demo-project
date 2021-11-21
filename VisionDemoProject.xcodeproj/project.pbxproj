@@ -23,6 +23,7 @@
 		542E8A99274AA2620054A16F /* EmptyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E8A96274AA2620054A16F /* EmptyImageView.swift */; };
 		542E8A9D274AA34C0054A16F /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E8A9C274AA34C0054A16F /* MainScene.swift */; };
 		542E8AA1274AA3E10054A16F /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E8AA0274AA3E10054A16F /* MainStore.swift */; };
+		548ECCA6274AB837001E8E5C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 548ECCA8274AB837001E8E5C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		542E8A96274AA2620054A16F /* EmptyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyImageView.swift; sourceTree = "<group>"; };
 		542E8A9C274AA34C0054A16F /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
 		542E8AA0274AA3E10054A16F /* MainStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
+		548ECCA7274AB837001E8E5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		548ECCA9274AB839001E8E5C /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BC7D1B4B7D26EACF2004AE94 /* Pods-VisionDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionDemoProject.debug.xcconfig"; path = "Target Support Files/Pods-VisionDemoProject/Pods-VisionDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E2030C87C7DB9EBFE68EFE /* Pods-VisionDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionDemoProject.release.xcconfig"; path = "Target Support Files/Pods-VisionDemoProject/Pods-VisionDemoProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +83,7 @@
 		542E8A6B274A9EF70054A16F /* VisionDemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				548ECC9E274AB770001E8E5C /* Resources */,
 				542E8A9A274AA3290054A16F /* Scenes */,
 				542E8A90274AA1E80054A16F /* Views */,
 				542E8A7C274AA02C0054A16F /* Common */,
@@ -171,6 +175,14 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
+		548ECC9E274AB770001E8E5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				548ECCA8274AB837001E8E5C /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		632D29FB7546984880CC47D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,8 +207,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 542E8A77274A9EF90054A16F /* Build configuration list for PBXNativeTarget "VisionDemoProject" */;
 			buildPhases = (
-				542E8A7B274A9FCB0054A16F /* SwiftFormat */,
 				691605347F33ED8806056DDD /* [CP] Check Pods Manifest.lock */,
+				542E8A7B274A9FCB0054A16F /* SwiftFormat */,
 				542E8A65274A9EF70054A16F /* Sources */,
 				542E8A66274A9EF70054A16F /* Frameworks */,
 				542E8A67274A9EF70054A16F /* Resources */,
@@ -232,7 +244,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				cs,
 			);
 			mainGroup = 542E8A60274A9EF70054A16F;
 			productRefGroup = 542E8A6A274A9EF70054A16F /* Products */;
@@ -250,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				542E8A74274A9EF90054A16F /* Preview Assets.xcassets in Resources */,
+				548ECCA6274AB837001E8E5C /* Localizable.strings in Resources */,
 				542E8A71274A9EF90054A16F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +352,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		548ECCA8274AB837001E8E5C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				548ECCA7274AB837001E8E5C /* en */,
+				548ECCA9274AB839001E8E5C /* cs */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		542E8A75274A9EF90054A16F /* Debug */ = {
