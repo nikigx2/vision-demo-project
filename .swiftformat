@@ -1,0 +1,20 @@
+#
+# https://github.com/nicklockwood/SwiftFormat
+# 
+# Feel free to send pull request or suggest improvements!
+# 
+# To run this only go to terminal swiftformat .
+# 
+
+# format options
+--allman false
+
+# file options
+--exclude Pods,**/*generated.swift,**/fastlane,vendor
+
+# rules
+--disable                   \
+    blankLinesAroundMark,   \
+    spaceAroundOperators,   \
+    trailingCommas,         \
+    strongOutlets

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CC9A8B1EBC8C65FB0C32E51 /* Pods_VisionDemoProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216E7516D2ED512F883BCF6E /* Pods_VisionDemoProject.framework */; };
 		542E8A6D274A9EF70054A16F /* VisionDemoProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E8A6C274A9EF70054A16F /* VisionDemoProjectApp.swift */; };
 		542E8A6F274A9EF70054A16F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E8A6E274A9EF70054A16F /* ContentView.swift */; };
 		542E8A71274A9EF90054A16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542E8A70274A9EF90054A16F /* Assets.xcassets */; };
@@ -14,11 +15,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		216E7516D2ED512F883BCF6E /* Pods_VisionDemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VisionDemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		542E8A69274A9EF70054A16F /* VisionDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		542E8A6C274A9EF70054A16F /* VisionDemoProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionDemoProjectApp.swift; sourceTree = "<group>"; };
 		542E8A6E274A9EF70054A16F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		542E8A70274A9EF90054A16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542E8A73274A9EF90054A16F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC7D1B4B7D26EACF2004AE94 /* Pods-VisionDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionDemoProject.debug.xcconfig"; path = "Target Support Files/Pods-VisionDemoProject/Pods-VisionDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
+		C2E2030C87C7DB9EBFE68EFE /* Pods-VisionDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionDemoProject.release.xcconfig"; path = "Target Support Files/Pods-VisionDemoProject/Pods-VisionDemoProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC9A8B1EBC8C65FB0C32E51 /* Pods_VisionDemoProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,8 @@
 			children = (
 				542E8A6B274A9EF70054A16F /* VisionDemoProject */,
 				542E8A6A274A9EF70054A16F /* Products */,
+				879502E67A39B808A7D6D78A /* Pods */,
+				632D29FB7546984880CC47D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		632D29FB7546984880CC47D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				216E7516D2ED512F883BCF6E /* Pods_VisionDemoProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		879502E67A39B808A7D6D78A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC7D1B4B7D26EACF2004AE94 /* Pods-VisionDemoProject.debug.xcconfig */,
+				C2E2030C87C7DB9EBFE68EFE /* Pods-VisionDemoProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 542E8A77274A9EF90054A16F /* Build configuration list for PBXNativeTarget "VisionDemoProject" */;
 			buildPhases = (
+				691605347F33ED8806056DDD /* [CP] Check Pods Manifest.lock */,
 				542E8A65274A9EF70054A16F /* Sources */,
 				542E8A66274A9EF70054A16F /* Frameworks */,
 				542E8A67274A9EF70054A16F /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		691605347F33ED8806056DDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VisionDemoProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		542E8A65274A9EF70054A16F /* Sources */ = {
@@ -263,6 +314,7 @@
 		};
 		542E8A78274A9EF90054A16F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC7D1B4B7D26EACF2004AE94 /* Pods-VisionDemoProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +344,7 @@
 		};
 		542E8A79274A9EF90054A16F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2E2030C87C7DB9EBFE68EFE /* Pods-VisionDemoProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
