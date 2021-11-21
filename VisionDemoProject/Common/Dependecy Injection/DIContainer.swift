@@ -37,5 +37,13 @@ final class DIContainer {
 }
 
 extension DIContainer {
-    func registerDependencies() {}
+    func registerDependencies() {
+        register(VisionServicing.self) {
+            VisionService()
+        }
+
+        register(CacheServicing.self) {
+            CacheService()
+        }
+    }
 }

@@ -14,6 +14,10 @@
 		542E8A74274A9EF90054A16F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542E8A73274A9EF90054A16F /* Preview Assets.xcassets */; };
 		542E8A84274AA0C30054A16F /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E8A82274AA0C20054A16F /* DIContainer.swift */; };
 		542E8A85274AA0C30054A16F /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E8A83274AA0C30054A16F /* Injected.swift */; };
+		542E8A89274AA1490054A16F /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E8A87274AA1490054A16F /* CacheService.swift */; };
+		542E8A8A274AA1490054A16F /* VisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E8A88274AA1490054A16F /* VisionService.swift */; };
+		542E8A8D274AA1880054A16F /* SavedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E8A8C274AA1880054A16F /* SavedState.swift */; };
+		542E8A8F274AA1980054A16F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E8A8E274AA1980054A16F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		542E8A73274A9EF90054A16F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		542E8A82274AA0C20054A16F /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		542E8A83274AA0C30054A16F /* Injected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		542E8A87274AA1490054A16F /* CacheService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		542E8A88274AA1490054A16F /* VisionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionService.swift; sourceTree = "<group>"; };
+		542E8A8C274AA1880054A16F /* SavedState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedState.swift; sourceTree = "<group>"; };
+		542E8A8E274AA1980054A16F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BC7D1B4B7D26EACF2004AE94 /* Pods-VisionDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionDemoProject.debug.xcconfig"; path = "Target Support Files/Pods-VisionDemoProject/Pods-VisionDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E2030C87C7DB9EBFE68EFE /* Pods-VisionDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VisionDemoProject.release.xcconfig"; path = "Target Support Files/Pods-VisionDemoProject/Pods-VisionDemoProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +90,9 @@
 		542E8A7C274AA02C0054A16F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				542E8A8E274AA1980054A16F /* Constants.swift */,
+				542E8A8B274AA17E0054A16F /* Models */,
+				542E8A86274AA13A0054A16F /* Services */,
 				542E8A7D274AA0820054A16F /* Dependecy Injection */,
 			);
 			path = Common;
@@ -94,6 +105,23 @@
 				542E8A83274AA0C30054A16F /* Injected.swift */,
 			);
 			path = "Dependecy Injection";
+			sourceTree = "<group>";
+		};
+		542E8A86274AA13A0054A16F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				542E8A87274AA1490054A16F /* CacheService.swift */,
+				542E8A88274AA1490054A16F /* VisionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		542E8A8B274AA17E0054A16F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				542E8A8C274AA1880054A16F /* SavedState.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		632D29FB7546984880CC47D2 /* Frameworks */ = {
@@ -248,9 +276,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				542E8A6F274A9EF70054A16F /* ContentView.swift in Sources */,
+				542E8A8D274AA1880054A16F /* SavedState.swift in Sources */,
+				542E8A8A274AA1490054A16F /* VisionService.swift in Sources */,
 				542E8A84274AA0C30054A16F /* DIContainer.swift in Sources */,
 				542E8A6D274A9EF70054A16F /* VisionDemoProjectApp.swift in Sources */,
 				542E8A85274AA0C30054A16F /* Injected.swift in Sources */,
+				542E8A89274AA1490054A16F /* CacheService.swift in Sources */,
+				542E8A8F274AA1980054A16F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
