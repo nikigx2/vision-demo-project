@@ -52,14 +52,17 @@ struct EditingView: View {
                 Button(action: { saveHandler() }) {
                     Text("Save state")
                 }
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.roundedRectangle)
 
                 Spacer()
 
                 Button(action: { resetStateHandler() }) {
                     Text("Reset state")
                 }
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.roundedRectangle)
             }
-            .padding()
         }
     }
 }
