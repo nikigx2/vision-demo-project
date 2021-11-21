@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  VisionDemoProject
+
+  Created by Nick Beresnev on 11/21/21.
+  
+*/
+
+"save.state" = "Uložit stav";
+"reset.state" = "Obnovit stav";
